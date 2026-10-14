@@ -578,6 +578,13 @@ Source/result provenance for the 2026-10-14 study (SHA-256):
 - Measured candidate `h3_gpu.m`: `f0edc230f99cfdd0865808bfbc9f8bd13bcef21b976d0b725a63008f3a91ff70`
 - Retained report `h3-lazy-pipeline-approved-disk-2026-10-14T044542870Z/reviewed/comparison-result.json`: `5d73a241a396cc48a2b096e41304a3ade0635d3883476e346996ac29176533c2`
 
+The [public sanitized samples and identity bindings](https://github.com/jerryfane/local-llm-performance-lab/blob/21fa3c0a51688b4441f1e79b50e4cf14e37d61d0/runs/20261014T-h3-lazy-pipelines/evidence.json)
+retain all twelve original rows. A [separate local-serving proof](https://github.com/jerryfane/local-llm-performance-lab/blob/21fa3c0a51688b4441f1e79b50e4cf14e37d61d0/runs/20261014T-h3-lazy-pipelines/deployment-proof.json)
+records an actual Studio API job, complete video/audio decoding and advancing
+browser playback after deploying the measured GPU source with the existing local
+parser and compact-QKV fixes. It is not a benchmark of this upstream branch or
+evidence of API acceleration.
+
 ### Weight residency and streamed prompt encoding
 
 On M5-class GPUs, persistent transformer weights are mapped directly from their
